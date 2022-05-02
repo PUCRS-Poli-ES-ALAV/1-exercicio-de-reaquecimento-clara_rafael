@@ -28,14 +28,13 @@ def _1v(n):
         return 2
     return 2 * _1v(n-1) + 3 * _1v(n-2)
 
-def _1vi(m,n):
-    # ???
+def _1vi(m, n):
     if m == 0:
         return n + 1
-    if m!= 0 and n ==0:
+    elif m != 0 and n == 0:
         return _1vi(m-1, 1)
-    if m!=0 and n!=0:
-        return _1vi(m-1, _1vi(m,n-1))
+    elif m != 0 and n != 0:
+        return _1vi(m-1, _1vi(m, n-1))
 
 def _1vii(list):
     # ???
